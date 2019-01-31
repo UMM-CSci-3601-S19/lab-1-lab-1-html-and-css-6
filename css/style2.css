@@ -7,7 +7,114 @@ use float to make something locate itself on the right or left
 
 */
 
-body{
-    padding: 30px;
-    background-color: #ffffff;
+/*
+#C89F79 (tan)
+#F4CD33 (yellow)
+#F65923 (orange)
+#401F15 (dark brown)
+#4E393C (dark purple)
+*/
+
+@media screen and (min-width: 925px) {
+  .pslo-courses-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*max-width: 53em;*/
+    width: 40%;
+  }
 }
+
+@media screen and (min-width: 300px) {
+  .pslo-courses-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 53em;
+  }
+  body {
+    padding-top: 4rem;
+  }
+}
+
+body{
+    /*padding: 30px;*/
+    background-color: #C89F79;
+    color: #F65923;
+    padding-top: 8rem;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.section {
+  background-color: #4E393C;
+  padding-right: 8rem;
+}
+
+.faculty-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+#pslo {
+  font-family: 'Marcellus', sans-serif;
+}
+#courses {
+  font-family: 'Marcellus', sans-serif;
+}
+
+#main-title {
+  position: fixed;
+  color: #F4CD33;
+  background-color: #401F15;
+  font-family: 'Patua One', monospace;
+  text-align: center;
+  font-size: 3rem;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+
+/* TODO: Put up top fixed below the "UMM Computer Science" */
+/*Style picker bar BEGIN*/
+#style ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#style li {
+  float: right; /*explore what happens if this is 'right' instead*/
+}
+
+#style li a {
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  text-decoration: none;
+}
+
+/* Change the link background color to #000 (black) on hover */
+#style li a:hover {
+  background-color: #000;
+}
+
+#style {
+  /*position: fixed;*/
+  background-color: blue;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 55px;
+  padding-top: 10px;
+}
+/*Style picker bar END*/
