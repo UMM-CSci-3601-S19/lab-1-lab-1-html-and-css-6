@@ -17,16 +17,25 @@ use float to make something locate itself on the right or left
 
 @media screen and (min-width: 925px) {
   .pslo-courses-container {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    float: left;
+    /*justify-content: center;*/
+    /*align-items: center;*/
     /*max-width: 53em;*/
-    width: 40%;
+    width: 50%;
+  }
+  .faculty-container {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    width: 50%;
   }
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 924px) {
   .pslo-courses-container {
     display: flex;
     flex-direction: row;
@@ -51,14 +60,6 @@ h1 {
 .section {
   background-color: #4E393C;
   padding-right: 8rem;
-}
-
-.faculty-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
 }
 
 #pslo {
