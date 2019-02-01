@@ -17,21 +17,25 @@ use float to make something locate itself on the right or left
 
 @media screen and (min-width: 925px) {
   .pslo-courses-container {
-    /*display: flex;*/
-    flex-direction: column;
     float: left;
+    /*display: flex;*/
+    /* flex-direction: column; */
     /*justify-content: center;*/
     /*align-items: center;*/
     /*max-width: 53em;*/
-    width: 50%;
+    width: 55%;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
   }
   .faculty-container {
-    display: flex;
-    float: right;
-    flex-direction: column;
+    /* display: flex; */
+    float: left;
+    /* flex-direction: column; */
     /*justify-content: center;*/
     /*align-items: center;*/
-    width: 50%;
+    width: 30%;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
   }
 }
 
@@ -81,25 +85,26 @@ h1 {
   top: 0;
 }
 
-
 /* TODO: Put up top fixed below the "UMM Computer Science" */
 /*Style picker bar BEGIN*/
 #style ul {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  width: 20%;
 }
 
 #style li {
-  float: right; /*explore what happens if this is 'right' instead*/
+  display: inline-flex;
+  width: 32%;
 }
 
 #style li a {
   display: block;
   color: white;
-  text-align: right;
+  text-align: center;
   padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
   text-decoration: none;
 }
@@ -110,11 +115,11 @@ h1 {
 }
 
 #style {
-  /*position: fixed;*/
+  position: fixed;
   background-color: blue;
   left: 0;
   right: 0;
-  top: 0;
+  top: 10%;
   height: 55px;
   padding-top: 10px;
 }
