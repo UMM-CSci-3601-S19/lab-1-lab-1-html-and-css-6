@@ -17,25 +17,22 @@ use float to make something locate itself on the right or left
 
 @media screen and (min-width: 925px) {
   .pslo-courses-container {
-    float: left;
-    /*display: flex;*/
-    /* flex-direction: column; */
-    /*justify-content: center;*/
+    /*float: left;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
     /*align-items: center;*/
-    /*max-width: 53em;*/
-    width: 55%;
-    padding-left: 1rem;
-    padding-right: 0.5rem;
+    max-width: 20%;
   }
   .faculty-container {
-    /* display: flex; */
-    float: left;
-    /* flex-direction: column; */
-    /*justify-content: center;*/
+    /*float: left;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
     /*align-items: center;*/
-    width: 30%;
-    padding-left: 0.5rem;
-    padding-right: 1rem;
+    max-width: 20%;
   }
 }
 
@@ -78,7 +75,7 @@ h1 {
   color: #F4CD33;
   background-color: #401F15;
   font-family: 'Patua One', monospace;
-  text-align: center;
+  text-align: left;
   font-size: 3rem;
   left: 0;
   right: 0;
@@ -89,11 +86,12 @@ h1 {
 /*Style picker bar BEGIN*/
 #style ul {
   list-style-type: none;
-  margin: auto;
-  padding: 0;
+  /*margin: auto;*/
+  /*padding: 0;*/
   overflow: hidden;
   background-color: #333;
-  width: 20%;
+  /*width: 10%;*/
+  float: right;
 }
 
 #style li {
@@ -116,10 +114,10 @@ h1 {
 
 #style {
   position: fixed;
-  background-color: blue;
+  /*background-color: blue;*/
   left: 0;
   right: 0;
-  top: 10%;
+  top: 0%;
   height: 55px;
   padding-top: 10px;
 }
