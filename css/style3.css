@@ -7,7 +7,75 @@ use float to make something locate itself on the right or left
 
 */
 
-body{
+body {
     padding: 30px;
-    background-color: #aaaaaa;
+    /*background-color: #37b1a8;*/
+    background-image: linear-gradient(#37b1a8, #03504a);
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+    text-align: left;
+    color: #1A5C73;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 2rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#main-title {
+    text-align: left;
+    color: #f95980;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 6rem;
+}
+
+/*PSLO Elements*/
+.pslo-courses-container {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#pslo {
+
+}
+
+#courses{
+
+}
+
+/*Faculty Elements*/
+.faculty-container {
+
+}
+
+#faculty {
+
+}
+
+#validation {
+  border: 4px dashed #F9D79C;
+  padding: 1rem;
+}
+
+/*Style Selector Elements*/
+#style{
+
+}
+/*////////////////*/
+/*Media Interfaces*/
+/*////////////////*/
+
+/*Desktop or Large Screens*/
+@media screen and (min-width: 925px) {
+
+}
+
+/*Mobile*/
+@media screen and (min-width: 658px) and (max-width: 924px) {
+
+}
+
+/*Smaller Mobile*/
+@media screen and (max-width: 657px) {
+
 }
