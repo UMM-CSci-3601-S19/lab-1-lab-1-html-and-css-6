@@ -15,45 +15,6 @@ use float to make something locate itself on the right or left
 #4E393C (dark purple)
 */
 
-@media screen and (min-width: 925px) {
-  .pslo-courses-container {
-    max-width: 49%;
-    float: left;
-    /*padding-top: 6rem;*/
-  }
-  .faculty-container {
-    max-width: 49%;
-    float: left;
-    /*margin-top: 6rem;*/
-  }
-}
-
-@media screen and (min-width: 658px) and (max-width: 924px) {
-  .pslo-courses-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 53em;
-    /*padding-top: 10rem;*/
-  }
-}
-
-@media screen and (max-width: 657px) {
-  #main-title {
-    font-size: 5px;
-  }
-  #style {
-    top: 6rem;
-  }
-
-  .pslo-courses-container {
-    width: 100%;
-    padding-top: 1.7rem;
-  }
-  .faculty-container {
-    width: 100%;
-    /*margin-top: 10rem;*/
-  }
-}
 
 #faculty>ul>li {
   display: inline-block;
@@ -134,16 +95,17 @@ h1 {
 }
 
 #pslo {
-  font-family: 'Marcellus', sans-serif;
+  font-family: 'Sarabun', sans-serif;
   border: 5px solid #F4CD33;
 }
 #courses {
-  font-family: 'Marcellus', sans-serif;
+  font-family: 'Sarabun', sans-serif;
   border: 5px solid #F4CD33;
 }
 
 .faculty-container {
   border: 5px solid #F4CD33;
+  font-family: 'Sarabun', sans-serif;
   background-color: #4E393C;
 }
 
@@ -151,7 +113,7 @@ h1 {
   position: fixed;
   color: #F4CD33;
   background-color: #401F15;
-  font-family: 'Patua One', monospace;
+  font-family: 'Oswald', sans-serif;
   text-align: center;
   font-size: 3rem;
   left: 0;
@@ -191,6 +153,58 @@ h1 {
   position: fixed;
   left: 0;
   right: 0;
-  top: 2.6rem;
+  top: 3rem;
 }
 /*Style picker bar END*/
+
+@media screen and (min-width: 925px) {
+  .pslo-courses-container {
+    max-width: 49%;
+    float: left;
+    /*padding-top: 6rem;*/
+  }
+  .faculty-container {
+    max-width: 49%;
+    float: left;
+    /*margin-top: 6rem;*/
+  }
+}
+
+@media screen and (min-width: 658px) and (max-width: 924px) {
+  .pslo-courses-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 53em;
+    /*padding-top: 10rem;*/
+  }
+}
+
+@media screen and (max-width: 657px) {
+  body #main-title {
+    font-size: 2rem;
+  }
+  #style {
+    top: 1.8rem;
+    font-size: 1rem;
+  }
+  #style li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px; /*this adds some spacing around the items in our "nav bar" */
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .pslo-courses-container {
+    width: 100%;
+    padding-top: 1.7rem;
+  }
+  .faculty-container {
+    width: 100%;
+    /*margin-top: 10rem;*/
+  }
+  body{
+    padding-top: 4rem;
+  }
+}
