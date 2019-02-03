@@ -19,28 +19,21 @@ use float to make something locate itself on the right or left
   .pslo-courses-container {
     max-width: 49%;
     float: left;
-    padding-top: 10rem;
+    /*padding-top: 6rem;*/
   }
   .faculty-container {
     max-width: 49%;
     float: left;
-    margin-top: 10rem;
+    /*margin-top: 6rem;*/
   }
 }
 
-@media screen and (max-width: 924px) {
+@media screen and (min-width: 658px) and (max-width: 924px) {
   .pslo-courses-container {
     display: flex;
     flex-direction: row;
     max-width: 53em;
-    padding-top: 10rem;
-  }
-  body {
-    /*padding-top: 4rem;*/
-  }
-
-  .faculty-container {
-    /*margin-top: 10rem;*/
+    /*padding-top: 10rem;*/
   }
 }
 
@@ -51,11 +44,20 @@ use float to make something locate itself on the right or left
   #style {
     top: 6rem;
   }
+
+  .pslo-courses-container {
+    width: 100%;
+    padding-top: 1.7rem;
+  }
+  .faculty-container {
+    width: 100%;
+    /*margin-top: 10rem;*/
+  }
 }
 
 #faculty>ul>li {
   display: inline-block;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 #faculty-list {
@@ -71,14 +73,13 @@ use float to make something locate itself on the right or left
 }
 
 #validation {
-  background-color: #401F15;
   font-family: 'Patua One', monospace;
+  border-top: 5px solid #F4CD33;
   text-align: center;
-  font-size: 1rem;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 4.6rem;
+}
+
+#validation ul {
+  padding-inline-start: 0;
 }
 
 .card-text {
@@ -89,16 +90,33 @@ use float to make something locate itself on the right or left
   /*margin-bottom: 14rem;*/
 }
 
-body{
+body {
     padding: 30px;
     background-color: #C89F79;
     color: #F65923;
     padding-top: 8rem;
 }
 
+/* Borrowed from style1 */
+li#Elena,#KK,#Nic,#Peter {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                        isn't enough space for all of the items. Without this the
+                        faculty images will be in a row and only resize well unitl around
+                        550px width of screen. */
+  justify-content: center;
+  align-content: center;
+}
+
 /* This allows the faculty-list to be centered while preserving the padding that was inherent in the ul
 padding of the other UL's */
 ul#faculty-list {
+  padding-inline-start: 0;
+}
+
+#style ul{
   padding-inline-start: 0;
 }
 
@@ -127,7 +145,6 @@ h1 {
 .faculty-container {
   border: 5px solid #F4CD33;
   background-color: #4E393C;
-
 }
 
 #main-title {
@@ -140,7 +157,6 @@ h1 {
   left: 0;
   right: 0;
   top: 0;
-  word-wrap: break-word;
 }
 
 /* TODO: Put up top fixed below the "UMM Computer Science" */
