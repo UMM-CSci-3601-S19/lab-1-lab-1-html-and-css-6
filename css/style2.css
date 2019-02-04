@@ -40,7 +40,7 @@ use float to make something locate itself on the right or left
 }
 
 #validation ul {
-  padding-inline-start: 0;
+  padding-left: 0;
 }
 
 .card-text {
@@ -74,11 +74,11 @@ li#Elena,#KK,#Nic,#Peter {
 /* This allows the faculty-list to be centered while preserving the padding that was inherent in the ul
 padding of the other UL's */
 ul#faculty-list {
-  padding-inline-start: 0;
+  padding-left: 0;
 }
 
 #style ul{
-  padding-inline-start: 0;
+  padding-left: 0;
 }
 
 h2 {

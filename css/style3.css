@@ -87,7 +87,7 @@ h2 {
 }
 
 ul#faculty-list {
-  padding-inline-start: 0;
+  padding-left: 0;
 }
 
 #faculty>ul>li {
@@ -156,3 +156,6 @@ ul#faculty-list {
     position: inherit;
   }
 }
+
+
+
