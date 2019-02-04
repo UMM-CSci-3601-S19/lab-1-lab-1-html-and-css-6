@@ -1,21 +1,50 @@
-/*
-hint:
-use # in front of the name of an id from your html page
-use . in front of the name of a class of things from your html page
-use , to separate a list of things that have some shared css rule
-use float to make something locate itself on the right or left
-
+/* COLORMIND
+F95980 (pink)
+F9D79C (light yellow)
+E2EACB (greenish white-keylime pie)
+03504A (dark green)
+386C7D (ocean blue)
 */
 
+/*START BodyFix
+  VERY BIG THANKS to MildWolfie @ https://stackoverflow.com/a/14776179 on Feb 8 '13 at 15:42
+
+  We were having this issue where the body and html itself on smaller range mobile widths would squish to the top left
+  of the page, with about the rightmost 40% of the page having no content in it. These changes got rid of the issue.
+*/
 body {
     padding: 30px;
-    /*background-color: #37b1a8;*/
     background-image: linear-gradient(#37b1a8, #03504a);
     font-family: 'Quicksand', sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+/*END BodyFix*/
+
+#validation li { /* Franky @ https://stackoverflow.com/questions/7775594/css-list-style-image-size/40021713#40021713 on Oct 13 '16 at 12:58*/
+  margin: 0;
+  padding: 36px 0 36px 40px;
+  list-style: none;
+  background-image: url("https://thumbs.gfycat.com/VariablePoliticalBurro-small.gif");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 30px;
+}
+
 h2 {
-    text-align: left;
+    text-align: center;
     color: #1A5C73;
     text-shadow: 1px 1px 1px #000;
     font-size: 2rem;
@@ -23,7 +52,7 @@ h2 {
 }
 
 #main-title {
-    text-align: left;
+    text-align: center;
     color: #f95980;
     text-shadow: 1px 1px 1px #000;
     font-size: 6rem;
@@ -48,19 +77,65 @@ h2 {
 
 }
 
-#faculty {
-
+/*Mostly Borrowed from style1 START*/
+#faculty-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
+
+ul#faculty-list {
+  padding-inline-start: 0;
+}
+
+#faculty>ul>li {
+  display: inline-block;
+  padding: 20px;
+  margin: 8px;
+  text-align: center;
+  border: 4px solid #F9D79C;
+  border-radius: 15px;
+}
+/*Borrowed from style1 END*/
 
 #validation {
-  border: 4px dashed #F9D79C;
+  border: 4px solid #F9D79C;
   padding: 1rem;
+  /*background-color: #386C7D;*/
+  background-image: url("https://www.dailydot.com/wp-content/uploads/97a/d8/246354a6d4005e451bffc5eb98c9b00a.jpg");
 }
 
-/*Style Selector Elements*/
+/*Style Selector Elements (mostly borrowed from style1)*/
 #style{
-
+  position: absolute;
+  /*bottom: 0;*/
+  left: 0;
+  right: 0;
 }
+
+#style li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  /*text-decoration: none;*/
+  font-size: 2rem;
+}
+
+#style ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #F95980;
+  margin: 1rem 0 0 0;
+}
+
+#style li {
+  display: inline-block; /* sandeep @ https://stackoverflow.com/a/8641277 */
+  width: 32%;
+}
+
 /*////////////////*/
 /*Media Interfaces*/
 /*////////////////*/
@@ -77,5 +152,7 @@ h2 {
 
 /*Smaller Mobile*/
 @media screen and (max-width: 657px) {
-
+  #style{
+    position: inherit;
+  }
 }

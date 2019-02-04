@@ -141,7 +141,7 @@ h1 {
   color: white;
   text-align: center;
   padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
-  text-decoration: none;
+  /*text-decoration: none;*/
   font-size: 2rem;
 }
 
