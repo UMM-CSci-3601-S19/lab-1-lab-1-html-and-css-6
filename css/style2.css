@@ -1,13 +1,209 @@
 /*
-hint:
-use # in front of the name of an id from your html page
-use . in front of the name of a class of things from your html page
-use , to separate a list of things that have some shared css rule
-use float to make something locate itself on the right or left
-
+#C89F79 (tan)
+#F4CD33 (yellow)
+#F65923 (orange)
+#401F15 (dark brown)
+#4E393C (dark purple)
 */
 
-body{
+a {
+  color: #F4CD33;
+}
+
+#faculty>ul>li {
+  display: inline-block;
+}
+
+#faculty-list {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                        isn't enough space for all of the items. Without this the
+                        faculty images will be in a row and only resize well unitl around
+                        550px width of screen. */
+  justify-content: center;
+  align-content: center;
+}
+
+#validation {
+  font-family: 'Patua One', monospace;
+  text-align: center;
+}
+
+#validation ul {
+  padding-left: 0;
+}
+
+.card-text {
+  list-style: none;
+}
+
+body {
     padding: 30px;
-    background-color: #ffffff;
+    background-color: #C89F79;
+    color: #F65923;
+    padding-top: 8rem;
+}
+
+/* Borrowed from style1 */
+li#Elena,#KK,#Nic,#Peter {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+li#Elena{
+  padding: 0.5rem;
+}
+li#KK{
+  padding: 0.5rem;
+}
+li#Nic{
+  padding: 0.5rem;
+}
+li#Peter{
+  padding: 0.5rem;
+}
+
+/* This allows the faculty-list to be centered while preserving the padding that was inherent in the ul
+padding of the other UL's */
+#style ul{
+  padding-left: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.section {
+  background-color: #4E393C;
+}
+
+#pslo {
+  font-family: 'Sarabun', sans-serif;
+  border: 5px solid #F4CD33;
+  padding: 0.5rem;
+}
+
+#courses {
+  font-family: 'Sarabun', sans-serif;
+  border: 5px solid #F4CD33;
+  padding: 0.5rem;
+}
+
+.faculty-container {
+  border: 5px solid #F4CD33;
+  font-family: 'Sarabun', sans-serif;
+  background-color: #4E393C;
+  padding: 0.5rem;
+}
+
+#main-title {
+  position: fixed;
+  color: #F4CD33;
+  background-color: #401F15;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/*Style picker bar BEGIN*/
+/* We started with the CSS from style1 */
+#style ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #401F15;
+}
+
+#style li {
+  display: inline-block;
+  width: 32%;
+}
+
+#style li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  font-size: 2rem;
+}
+
+#style li a:hover {
+  background-color: #F65923;
+}
+
+#style {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 3rem;
+}
+/*Style picker bar END*/
+
+
+@media screen and (min-width: 925px) {
+  .pslo-courses-container {
+    max-width: 47%;
+    float: left;
+    font-size: 1.1rem;
+  }
+  .faculty-container {
+    max-width: 49%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 658px) and (max-width: 924px) {
+  .pslo-courses-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 53em;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  body #main-title {
+    font-size: 2rem;
+  }
+  #style {
+    top: 1.8rem;
+    font-size: 1rem;
+  }
+  #style li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .pslo-courses-container {
+    padding-top: 1.7rem;
+  }
+  .faculty-container {
+  }
+  body{
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (min-height: 1300px){
+  .pslo-courses-container {
+    font-size: 1.45rem;
+  }
+  li#Elena,#KK,#Nic,#Peter {
+    font-size: 1.4rem;
+  }
 }
