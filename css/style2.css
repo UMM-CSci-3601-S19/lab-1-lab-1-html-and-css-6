@@ -50,27 +50,14 @@ body {
 }
 
 /* Borrowed from style1 */
+/*An example of the ids attached to the images of the faculty*/
 li#Elena,#KK,#Nic,#Peter {
-  padding-left: 0;
+  padding: 0.5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-}
-
-/*An example of the ids attached to the images of the faculty*/
-li#Elena{
-  padding: 0.5rem;
-}
-li#KK{
-  padding: 0.5rem;
-}
-li#Nic{
-  padding: 0.5rem;
-}
-li#Peter{
-  padding: 0.5rem;
 }
 
 /* This allows the faculty-list to be centered while preserving the padding that was inherent in the ul
@@ -87,13 +74,13 @@ h1 {
   margin-top: 0;
 }
 
+/*An example of a class .section*/
 .section {
   background-color: #4E393C;
 }
 
 #pslo {
   font-family: 'Sarabun', sans-serif;
-  /*An instance of the border class*/
   border: 5px solid #F4CD33;
   padding: 0.5rem;
 }

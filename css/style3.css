@@ -15,13 +15,13 @@ E2EACB (greenish white-keylime pie)
 body {
     padding: 30px;
   /*CSS Rule*/
-  /*adds a background gradiant color, which is different from the non-gradient in style 1.*/
+  /*adds a background gradiant color, which is different from the non-gradient in style 1. This was our own modification.*/
     background-image: linear-gradient(#37b1a8, #03504a);
     font-family: 'Quicksand', sans-serif;
 }
 /*CSS Rule*/
 /*Fixes certain issues which caused the text to be focused on the left side of mobile screens, which wasnt a problem in*/
-/*style 1*/
+/*style 1. The code comes from someone else, but we understand what its doing.*/
 html, body {
   height: 100%;
 }
@@ -85,15 +85,8 @@ h2 {
   font-size: 1.5rem;
 }
 
-#pslo {
-
-}
-
-#courses{
-
-}
-
 /*Faculty Elements*/
+/*An example of a class .faculty-container*/
 .faculty-container {
   color: #fff;
   font-size: 1.5rem;
@@ -110,6 +103,9 @@ h2 {
 }
 
 ul#faculty-list {
+  /*CSS Rule*/
+  /*This removes a default left padding zone that puts lists off center from their parent. We were hiding the
+  bullet points from the list anyways, so the padding on the UL itself wasn't necessary.*/
   padding-left: 0;
 }
 
@@ -136,8 +132,6 @@ ul#faculty-list {
   list-style-type: none;
   font-family: 'Quicksand', 'sans-serif';
   font-size: 3rem;
-  /*CSS Rule*/
-  /*Sets the style bar at the bottom of the page, unlike Style 1 where its at the top. Its also not fixed, unlike Style 1*/
   bottom: 0;
   left: 0;
   right: 0;
@@ -145,7 +139,6 @@ ul#faculty-list {
 
 #style li a {
   display: block;
-  /*An example of the color class*/
   color: white;
   text-align: center;
   padding: 14px 16px;

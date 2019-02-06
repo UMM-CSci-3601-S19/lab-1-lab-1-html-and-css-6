@@ -23,7 +23,7 @@ settings.
 > When you publish your site to Github pages, Github will display the URL
 > where you can find your published site. The primary repo we use to manage
 > changes to this lab across semesters is published
-> at http://umm-csci-3601.github.io/3601-lab1_HTML-CSS/;
+> at https://umm-csci-3601-s19.github.io/lab-1-lab-1-html-and-css-6/#;
 > yours will be at a different URL but should look somewhat similar.
 
 ## "Running" your project
