@@ -1,13 +1,4 @@
 /*
-hint:
-use # in front of the name of an id from your html page
-use . in front of the name of a class of things from your html page
-use , to separate a list of things that have some shared css rule
-use float to make something locate itself on the right or left
-
-*/
-
-/*
 #C89F79 (tan)
 #F4CD33 (yellow)
 #F65923 (orange)
@@ -15,14 +6,16 @@ use float to make something locate itself on the right or left
 #4E393C (dark purple)
 */
 
+a {
+  color: #F4CD33;
+}
 
 #faculty>ul>li {
   display: inline-block;
-  padding: 0.5rem;
 }
 
 #faculty-list {
-  /*padding-right: 0;*/
+  padding: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; /* This tell's the flex items to wrap if there
@@ -35,7 +28,6 @@ use float to make something locate itself on the right or left
 
 #validation {
   font-family: 'Patua One', monospace;
-  border-top: 5px solid #F4CD33;
   text-align: center;
 }
 
@@ -45,10 +37,6 @@ use float to make something locate itself on the right or left
 
 .card-text {
   list-style: none;
-}
-
-#faculty {
-  /*margin-bottom: 14rem;*/
 }
 
 body {
@@ -63,20 +51,26 @@ li#Elena,#KK,#Nic,#Peter {
   padding-left: 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* This tell's the flex items to wrap if there
-                        isn't enough space for all of the items. Without this the
-                        faculty images will be in a row and only resize well unitl around
-                        550px width of screen. */
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
 
-/* This allows the faculty-list to be centered while preserving the padding that was inherent in the ul
-padding of the other UL's */
-ul#faculty-list {
-  padding-left: 0;
+li#Elena{
+  padding: 0.5rem;
+}
+li#KK{
+  padding: 0.5rem;
+}
+li#Nic{
+  padding: 0.5rem;
+}
+li#Peter{
+  padding: 0.5rem;
 }
 
+/* This allows the faculty-list to be centered while preserving the padding that was inherent in the ul
+padding of the other UL's */
 #style ul{
   padding-left: 0;
 }
@@ -91,23 +85,25 @@ h1 {
 
 .section {
   background-color: #4E393C;
-  /*padding-right: 8rem;*/
 }
 
 #pslo {
   font-family: 'Sarabun', sans-serif;
   border: 5px solid #F4CD33;
+  padding: 0.5rem;
 }
 
 #courses {
   font-family: 'Sarabun', sans-serif;
   border: 5px solid #F4CD33;
+  padding: 0.5rem;
 }
 
 .faculty-container {
   border: 5px solid #F4CD33;
   font-family: 'Sarabun', sans-serif;
   background-color: #4E393C;
+  padding: 0.5rem;
 }
 
 #main-title {
@@ -122,7 +118,6 @@ h1 {
   top: 0;
 }
 
-/* TODO: Put up top fixed below the "UMM Computer Science" */
 /*Style picker bar BEGIN*/
 /* We started with the CSS from style1 */
 #style ul {
@@ -132,7 +127,7 @@ h1 {
 }
 
 #style li {
-  display: inline-block; /* sandeep @ https://stackoverflow.com/a/8641277 */
+  display: inline-block;
   width: 32%;
 }
 
@@ -141,13 +136,11 @@ h1 {
   color: white;
   text-align: center;
   padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
-  /*text-decoration: none;*/
   font-size: 2rem;
 }
 
-/* Change the link background color to #000 (black) on hover */
 #style li a:hover {
-  background-color: #000;
+  background-color: #F65923;
 }
 
 #style {
@@ -158,16 +151,16 @@ h1 {
 }
 /*Style picker bar END*/
 
+
 @media screen and (min-width: 925px) {
   .pslo-courses-container {
-    max-width: 49%;
+    max-width: 47%;
     float: left;
-    /*padding-top: 6rem;*/
+    font-size: 1.1rem;
   }
   .faculty-container {
     max-width: 49%;
     float: left;
-    /*margin-top: 6rem;*/
   }
 }
 
@@ -176,7 +169,6 @@ h1 {
     display: flex;
     flex-direction: row;
     max-width: 53em;
-    /*padding-top: 10rem;*/
   }
 }
 
@@ -192,20 +184,26 @@ h1 {
     display: block;
     color: white;
     text-align: center;
-    padding: 8px 16px; /*this adds some spacing around the items in our "nav bar" */
+    padding: 8px 16px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .pslo-courses-container {
-    width: 100%;
     padding-top: 1.7rem;
   }
   .faculty-container {
-    width: 100%;
-    /*margin-top: 10rem;*/
   }
   body{
     padding-top: 4rem;
+  }
+}
+
+@media screen and (min-height: 1300px){
+  .pslo-courses-container {
+    font-size: 1.45rem;
+  }
+  li#Elena,#KK,#Nic,#Peter {
+    font-size: 1.4rem;
   }
 }
